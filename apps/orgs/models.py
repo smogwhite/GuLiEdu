@@ -38,7 +38,7 @@ class OrgInfo(models.Model):
         verbose_name_plural = verbose_name
 
 
-class TeacherIngo(models.Model):
+class TeacherInfo(models.Model):
     image = models.ImageField(upload_to='teacher/', max_length=200, verbose_name="讲师头像")
     name = models.CharField(max_length=20, verbose_name="讲师姓名")
     work_year = models.IntegerField(default=3, verbose_name="工作年限")
